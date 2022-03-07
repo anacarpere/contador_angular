@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'contador';
+  num:number = 0
+
+  adicionar():void{
+    this.num++
+  }
+  reduzir():void{
+    if(this.num > 0)
+    this.num--
+  }
 }
+
